@@ -1,10 +1,72 @@
-nav {
-    background-color:aqua;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: aqua; 
 }
 
-body {
-    margin: 0;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #003366; 
+  color: white;
+  padding: 10px 20px;
+}
+
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background: #ffcc00; 
+}
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  gap: 20px;
+}
+
+
+.account-overview, .financial-tools {
+  background: rgb(141, 207, 220);
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #003366;
+}
+
+textarea {
+  width: 90%;
+  margin: 20px auto;
+  display: block;
+}
+
+button {
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #005599;
+}
+
+input, select {
+  margin: 5px 0;
+  padding: 5px;
 }

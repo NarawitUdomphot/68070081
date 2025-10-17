@@ -36,6 +36,17 @@ function convertCurrency() {
   let input = parseFloat(document.getElementById("input-balance").value);
   let currency = document.getElementById("currency").value;
   let outputBox = document.getElementById("output-balance");
-
+  if (isNaN(input)) {
+    alert("Enter valid number")
+    return
+  }
+  let result
+  if (currency == "USD") {
+    result = input * 32.07
+  } else {
+    result = input / 32.07
+  }
+  outputBox.value = result .toFixed(2)
   
 }
+
